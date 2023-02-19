@@ -20,13 +20,11 @@ def find_mismatch(text):
             opening_brackets_stack.pop()
         if opening_brackets_stack:
             return
-    opening_brackets_stack[0].position
-        return "Success"
+    return opening_brackets_stack[0].position if opening_brackets_stack else "Success"
 
 def main():
     text = input()
     mismatch = find_mismatch(text)
-    # Printing answer, write your code here
     print(mismatch)
 if __name__ == "__main__":
     input("I")
