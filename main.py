@@ -27,5 +27,5 @@ def main():
     mismatch = find_mismatch(text)
     print(mismatch)
 if __name__ == "__main__":
-    input("I")
+    input()
     main()
