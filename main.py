@@ -19,8 +19,9 @@ def find_mismatch(text):
                 return i+1
             opening_brackets_stack.pop()
         if opening_brackets_stack:
-            return
-    return opening_brackets_stack[0].position if opening_brackets_stack else "Success"
+          return opening_brackets_stack[0].position 
+        return "Success"
+        
 
 def main():
     text = input()
